@@ -151,7 +151,7 @@ a { color: inherit; }
   /* text on the start (right) half at mid-height, centred within its own box; objects and phone on the left half */
   .obj--sheet { --x: -210px; } .obj--watch { --x: 210px; } .obj--book { --x: -200px; } .obj--board { --x: 210px; }
   .scene-on .obj, .scene-on .scene__phone { left: 28%; top: 56%; }
-  .scene-on .scene__head { top: 50%; transform: translateY(-50%); max-width: 600px; margin-inline: 0; inset-inline: max(var(--gutter), calc((100% - 1120px) / 2)); }
+  .scene-on .scene__head { top: 50%; transform: translateY(-50%); max-width: 600px; margin-inline: 0; inset-inline: var(--gutter); } /* its right edge lines up with the wordmark */
 }
 
 /* ---------- 3-6. paper / digital bands ---------- */
