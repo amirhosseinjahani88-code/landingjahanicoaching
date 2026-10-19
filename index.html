@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#EDE4D3">
+  <title>کوچینگ جهانی، مربیگری شنا</title>
+  <meta name="description" content="از کاغذ کنار استخر، تا پنل دیجیتال. رکورد، حضور، شهریه و برنامه‌ی تمرین روی گوشی مربی.">
+  <link rel="preload" href="fonts/Vazirmatn-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="landing.css">
+  <script src="landing-core.js" defer></script>
+  <script src="landing.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#content">پرش به محتوا</a>
+
+  <!-- Drawings of the paper world. Stand-ins until the owner's photos arrive (see README). -->
+  <svg class="defs" aria-hidden="true" focusable="false">
+    <symbol id="i-sheet" viewBox="0 0 200 250">
+      <rect x="6" y="14" width="188" height="232" rx="12" fill="#8A6A45"/>
+      <rect x="20" y="34" width="160" height="200" fill="#FBF8F1"/>
+      <rect x="70" y="4" width="60" height="26" rx="6" fill="#9AA0A6"/>
+      <g fill="#24318A" font-family="Vazirmatn" font-size="13" text-anchor="start">
+        <text x="168" y="62" font-weight="700">رکورد ۵۰ کرال</text>
+        <text x="168" y="94">آوا</text><text x="168" y="124">رادین</text><text x="168" y="154">هستی</text><text x="168" y="184">آرین</text>
+      </g>
+      <g fill="#24318A" font-family="Vazirmatn" font-size="13" text-anchor="end">
+        <text x="32" y="94">۰:۴۱٫۲</text><text x="32" y="124">۰:۳۸٫۹</text><text x="32" y="154">۰:۴۴٫۰</text><text x="32" y="184">۰:۳۹٫۶</text>
+      </g>
+      <path d="M32 200h70M120 200h48M32 216h40" stroke="#24318A" stroke-width="2" stroke-linecap="round" opacity=".5"/>
+    </symbol>
+    <symbol id="i-watch" viewBox="0 0 200 230">
+      <rect x="86" y="2" width="28" height="22" rx="5" fill="#7D848B"/>
+      <rect x="146" y="30" width="22" height="16" rx="4" fill="#7D848B" transform="rotate(40 157 38)"/>
+      <circle cx="100" cy="126" r="96" fill="#3A4148"/>
+      <circle cx="100" cy="126" r="80" fill="#F4F1EA"/>
+      <g stroke="#2B231A" stroke-width="3" stroke-linecap="round">
+        <path d="M100 52v12M100 188v12M26 126h12M162 126h12M48 74l8 8M144 170l8 8M48 178l8-8M144 82l8-8"/>
+      </g>
+      <path d="M100 126 136 84" stroke="#C0392B" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="100" cy="126" r="7" fill="#2B231A"/>
+    </symbol>
+    <symbol id="i-book" viewBox="0 0 220 200">
+      <rect x="4" y="16" width="212" height="180" rx="8" fill="#2F5D50"/>
+      <rect x="16" y="26" width="188" height="160" fill="#FBF8F1"/>
+      <g fill="#7D848B"><circle cx="40" cy="20" r="6"/><circle cx="80" cy="20" r="6"/><circle cx="120" cy="20" r="6"/><circle cx="160" cy="20" r="6"/><circle cx="200" cy="20" r="6"/></g>
+      <g fill="#2B231A" font-family="Vazirmatn" font-size="12" text-anchor="start">
+        <text x="192" y="52" font-weight="700">حضور مهر</text>
+        <text x="192" y="80">آوا</text><text x="192" y="106">رادین</text><text x="192" y="132">هستی</text><text x="192" y="158">شهریه</text>
+      </g>
+      <path d="M32 73l4 5 8-10 M54 73l4 5 8-10 M76 68l9 9m0-9-9 9 M98 73l4 5 8-10 M32 99l4 5 8-10 M54 94l9 9m0-9-9 9 M76 99l4 5 8-10 M98 99l4 5 8-10 M32 125l4 5 8-10 M54 125l4 5 8-10 M76 125l4 5 8-10 M98 120l9 9m0-9-9 9" stroke="#24318A" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="32" y="158" fill="#24318A" font-family="Vazirmatn" font-size="14" text-anchor="end">؟</text>
+    </symbol>
+    <symbol id="i-board" viewBox="0 0 240 190">
+      <rect x="2" y="2" width="236" height="166" rx="8" fill="#B8BEC4"/>
+      <rect x="12" y="12" width="216" height="146" fill="#FFFFFF"/>
+      <rect x="40" y="168" width="160" height="12" rx="3" fill="#8D949B"/>
+      <g font-family="Vazirmatn" font-size="15" text-anchor="start">
+        <text x="214" y="42" fill="#1F4FA0" font-weight="700">تمرین امروز</text>
+        <text x="214" y="72" fill="#1F4FA0">۴۰۰ گرم کردن</text>
+        <text x="214" y="98" fill="#C0392B">۸ × ۵۰ کرال سینه</text>
+        <text x="214" y="124" fill="#1F4FA0">۴ × ۱۰۰ پا</text>
+        <text x="214" y="148" fill="#1F4FA0">۲۰۰ سرد کردن</text>
+      </g>
+    </symbol>
+  </svg>
+
+  <header class="bar">
+    <a class="bar__mark" href="https://jahanicoaching.ir/#/">کوچینگ جهانی</a>
+    <nav class="bar__nav" aria-label="ناوبری">
+      <a class="bar__link" href="https://jahanicoaching.ir/#/pricing">تعرفه‌ها</a>
+      <a class="btn btn--sm" href="https://jahanicoaching.ir/#/app/workout">۳ تمرین رایگان</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. Hero: paper objects fold into the phone as the page scrolls. -->
+    <section class="scene" id="scene" aria-labelledby="hero-title">
+      <div class="scene__stage">
+        <div class="scene__paper" aria-hidden="true"></div>
+
+        <div class="scene__head">
+          <div class="scene__titles">
+            <h1 class="hero-title" id="hero-title"><span class="line"><span>از کاغذ کنار استخر</span></span> <span class="line"><span>تا پنل دیجیتال</span></span></h1>
+            <ol class="scene__captions" aria-label="از کاغذ تا پنل">
+            <li class="cap"><span class="cap__from">برگه‌ی رکورد</span> <span class="cap__to">رکورد در پرونده‌ی شاگرد</span></li>
+            <li class="cap"><span class="cap__from">کرنومتر دستی</span> <span class="cap__to">کرنومتر در پنل</span></li>
+            <li class="cap"><span class="cap__from">دفتر حضور و شهریه</span> <span class="cap__to">حضور و شهریه با یک لمس</span></li>
+            <li class="cap"><span class="cap__from">تخته‌ی تمرین</span> <span class="cap__to">برنامه‌ی هوشمند روی گوشی</span></li>
+        </ol>
+          </div>
+          <p class="hero-cue">اسکرول کنید <span aria-hidden="true">↓</span></p>
+        </div>
+
+        <div class="scene__phone">
+          <div class="phone" data-ui role="img" aria-label="نمای نمونه‌ی پنل مربی روی گوشی: رکوردها، کرنومتر، حضور و شهریه، و برنامه‌ی تمرین">
+            <div class="phone__screen" aria-hidden="true">
+              <p class="phone__title">امروز <span class="tag">نمونه</span></p>
+              <div class="prow"><span>رکوردها</span><span class="prow__v">۵۰ کرال سینه، ۰:۳۸٫۹۰</span></div>
+              <div class="prow"><span>کرنومتر</span><span class="prow__v">۰:۴۱٫۲۰</span></div>
+              <div class="prow"><span>حضور و شهریه</span><span class="prow__v">۸ حاضر، تسویه‌شده</span></div>
+              <div class="prow"><span>برنامه‌ی تمرین</span><span class="prow__v">۱٫۴۰۰ متر</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="obj obj--sheet" aria-hidden="true"><svg viewBox="0 0 200 250"><use href="#i-sheet"/></svg></div>
+        <div class="obj obj--watch" aria-hidden="true"><svg viewBox="0 0 200 230"><use href="#i-watch"/></svg></div>
+        <div class="obj obj--book" aria-hidden="true"><svg viewBox="0 0 220 200"><use href="#i-book"/></svg></div>
+        <div class="obj obj--board" aria-hidden="true"><svg viewBox="0 0 240 190"><use href="#i-board"/></svg></div>
+      </div>
+    </section>
+
+    <div id="content" tabindex="-1">
+
+    <!-- 3-6. Paper or digital: each band has a working switch. -->
+    <section class="bands" aria-label="از کاغذ تا پنل">
+
+      <article class="band">
+        <div class="wrap band__head">
+          <h2 class="band__title" id="b1">رکورد، عدد می‌شود.</h2>
+          <button type="button" class="switch" role="switch" aria-checked="false" aria-labelledby="b1 b1-state"><span class="switch__knob"></span></button>
+          <span class="band__state" id="b1-state"><span class="st-off">کاغذ</span><span class="st-on">دیجیتال</span></span>
+        </div>
+        <div class="wrap band__body">
+          <div class="band__before">
+            <figure class="photo"><svg viewBox="0 0 200 250"><use href="#i-sheet"/></svg></figure>
+            <p>سنجش فنی هنوز حسی است.</p>
+          </div>
+          <div class="band__after">
+            <div class="frag" data-ui aria-hidden="true">
+              <div class="frag__head"><span>کرال سینه، ۱۰۰ متر</span><span class="tag">نمونه</span></div>
+              <svg class="chart" viewBox="0 0 320 120"><polyline points="300,92 240,74 180,62 120,54 60,40 20,30"/></svg>
+              <dl class="metrics"><div><dt>ریت</dt><dd>۴۲</dd></div><div><dt>DPS</dt><dd>۱٫۸۵</dd></div><div><dt>World Aquatics</dt><dd>۴۱۲</dd></div></dl>
+            </div>
+            <p>رکورد هر شاگرد در پرونده‌ی خودش. ریت دست، DPS و امتیاز World Aquatics روی نمودار. <span class="plan-note">آنالیز در Pro</span></p>
+          </div>
+        </div>
+      </article>
+
+      <article class="band">
+        <div class="wrap band__head">
+          <h2 class="band__title" id="b2">دفتر حضور، بسته شد.</h2>
+          <button type="button" class="switch" role="switch" aria-checked="false" aria-labelledby="b2 b2-state"><span class="switch__knob"></span></button>
+          <span class="band__state" id="b2-state"><span class="st-off">کاغذ</span><span class="st-on">دیجیتال</span></span>
+        </div>
+        <div class="wrap band__body">
+          <div class="band__before">
+            <figure class="photo"><svg viewBox="0 0 220 200"><use href="#i-book"/></svg></figure>
+            <p>شهریه در پیام‌ها گم می‌شود.</p>
+          </div>
+          <div class="band__after">
+            <div class="frag" data-ui aria-hidden="true">
+              <div class="frag__head"><span>حضور و غیاب، ۱۶:۰۰</span><span class="tag">نمونه</span></div>
+              <div class="frow"><span>هستی جعفری</span><span class="pill pill--ok">حاضر</span></div>
+              <div class="frow"><span>رادین محمدی</span><span class="pill pill--warn">تأخیر</span></div>
+              <div class="frow"><span>آرین کریمی</span><span class="pill pill--bad">غایب</span></div>
+              <div class="frow"><span>شهریه مهر، هستی جعفری</span><span class="pill pill--ok">تسویه‌شده</span></div>
+            </div>
+            <p>حضور و غیاب روزانه با یک لمس. رسید وصل به پرونده. برگه‌ی حضور یا رسید را اسکن کنید. <span class="plan-note">اسکن رسید و دستیار مالی در Pro</span></p>
+          </div>
+        </div>
+      </article>
+
+      <article class="band">
+        <div class="wrap band__head">
+          <h2 class="band__title" id="b3">تخته را پاک کنید.</h2>
+          <button type="button" class="switch" role="switch" aria-checked="false" aria-labelledby="b3 b3-state"><span class="switch__knob"></span></button>
+          <span class="band__state" id="b3-state"><span class="st-off">کاغذ</span><span class="st-on">دیجیتال</span></span>
+        </div>
+        <div class="wrap band__body">
+          <div class="band__before">
+            <figure class="photo"><svg viewBox="0 0 240 190"><use href="#i-board"/></svg></figure>
+            <p>برنامه هنوز روی کاغذ نوشته می‌شود.</p>
+          </div>
+          <div class="band__after">
+            <div class="frag" data-ui aria-hidden="true">
+              <p class="frag__quote">«۴۰۰ گرم کردن، ۸ تا ۵۰ کرال سینه با ۲۰ ثانیه استراحت، ۴ تا ۱۰۰ پا، ۲۰۰ سرد کردن»</p>
+              <div class="frow"><span>گرم کردن</span><span>۴۰۰ متر</span></div>
+              <div class="frow"><span>۸ × ۵۰ کرال سینه، استراحت ۲۰ ثانیه</span><span>۴۰۰ متر</span></div>
+              <div class="frow"><span>۴ × ۱۰۰ پا</span><span>۴۰۰ متر</span></div>
+              <div class="frow"><span>سرد کردن</span><span>۲۰۰ متر</span></div>
+              <div class="frow frow--total"><span>مجموع متراژ</span><span>۱٫۴۰۰ متر</span></div>
+            </div>
+            <p>یک جمله بنویسید یا بگویید. جلسه آماده است، با محاسبه‌ی خودکار متراژ.</p>
+            <a class="btn" href="https://jahanicoaching.ir/#/app/workout">۳ تمرین رایگان</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="band">
+        <div class="wrap band__head">
+          <h2 class="band__title" id="b4">اولیا هم در جریان‌اند.</h2>
+          <button type="button" class="switch" role="switch" aria-checked="false" aria-labelledby="b4 b4-state"><span class="switch__knob"></span></button>
+          <span class="band__state" id="b4-state"><span class="st-off">کاغذ</span><span class="st-on">دیجیتال</span></span>
+        </div>
+        <div class="wrap band__body">
+          <div class="band__before">
+            <p class="band__big">اولیا پیشرفت را نمی‌بینند.</p>
+          </div>
+          <div class="band__after">
+            <div class="frag" data-ui aria-hidden="true">
+              <div class="frag__head"><span>آوا قاسمی، ۷ تا ۹ سال</span><span class="tag">نمونه</span></div>
+              <p class="frag__quote">تنفس دوطرفه در کرال سینه بهتر شده است.</p>
+              <div class="frow"><span>حضور و غیاب مهر</span><span class="pill pill--ok">حاضر</span></div>
+              <div class="frow"><span>شهریه مهر</span><span class="pill pill--ok">تسویه‌شده</span></div>
+            </div>
+            <p>اولیا پیشرفت و شهریه را می‌بینند؛ با لینک اختصاصی، بدون ورود به پنل. <span class="plan-note">پورتال مستقل در Pro؛ در Essential کارنامه‌ی متنی اولیا</span></p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Prices, laid out like the live landing's plan cards. -->
+    <section class="pricing" aria-labelledby="price-title">
+      <div class="wrap">
+        <h2 class="h2 pricing__title reveal" id="price-title">دو اشتراک ماهانه.</h2>
+        <div class="plans">
+            <article class="plan" aria-labelledby="p-ess">
+              <div>
+                <h3 class="plan__name" id="p-ess">Essential</h3>
+                <p class="plan__for">مربیان تازه‌کار و مدارس شنای مبتدی</p>
+              </div>
+              <p class="plan__price"><span class="plan__amount">۵٫۰۰۰٫۰۰۰</span><span class="plan__unit">تومان / ماهانه</span></p>
+              <ul class="checklist">
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>مدیریت شاگردان و پرونده پایه</li>
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>طراح تمرین دستی با محاسبه خودکار متراژ</li>
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>حضور و غیاب روزانه</li>
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>کارنامه متنی اولیا (پیش‌نمایش)</li>
+              </ul>
+              <details class="disclosure">
+                <summary>قفل در Pro<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"></path></svg></summary>
+                <ul class="checklist checklist--locked">
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5"></rect><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"></path></svg>تمرین‌نویسی هوشمند با متن و ویس</li>
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5"></rect><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"></path></svg>آنالیز بیومکانیک، ریت دست و امتیاز World Aquatics</li>
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5"></rect><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"></path></svg>دستیار مالی و اسکن OCR رسید</li>
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5"></rect><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"></path></svg>آرشیو متدولوژی جهانی</li>
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5"></rect><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"></path></svg>پورتال زنده اولیا</li>
+                </ul>
+              </details>
+              <a class="btn btn--ghost btn--block btn--lg plan__cta" href="https://jahanicoaching.ir/#/pricing">شروع</a>
+            </article>
+            <article class="plan plan--pro" aria-labelledby="p-pro">
+              <div>
+                <h3 class="plan__name" id="p-pro">Pro</h3>
+                <p class="plan__for">مربیان ارشد، رقابتی و تیم‌ساز</p>
+              </div>
+              <p class="plan__price"><span class="plan__amount">۲۰٫۰۰۰٫۰۰۰</span><span class="plan__unit">تومان / ماهانه</span></p>
+              <ul class="checklist">
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>کاکپیت مربی با هوش عملیاتی روز</li>
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>پروفایل ۳۶۰ درجه شناگر</li>
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>تمرین‌نویسی هوشمند با متن و ویس</li>
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>دروازه بازبینی AI پیش از انتشار</li>
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>آنالیز ریت دست، DPS و امتیاز World Aquatics</li>
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>دستیار مالی با اسکن OCR رسید</li>
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>آرشیو متدولوژی و طرح‌درس سنین پایه</li>
+                <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"></path></svg>پورتال مستقل اولیا با لینک اختصاصی</li>
+              </ul>
+              <a class="btn btn--block btn--lg plan__cta" href="https://jahanicoaching.ir/#/pricing">شروع</a>
+            </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing, centred like the live landing. -->
+    <section class="closing" aria-labelledby="cta-title">
+      <h2 class="closing__title reveal" id="cta-title">سه تمرین اول، رایگان.</h2>
+      <p class="closing__sub reveal">جلسه را در یک جمله بنویسید، ثبت‌نام کنید و تمرین آماده را ببینید.</p>
+      <a class="btn btn--lg reveal" href="https://jahanicoaching.ir/#/app/workout">۳ تمرین رایگان</a>
+    </section>
+
+    </div>
+  </main>
+
+  <footer class="foot">
+    <p>کوچینگ جهانی، زیرساخت دیجیتال مربیگری و تحلیل بیومکانیک شنا. امیرحسین جهانی، تهران، تهرانپارس. <a class="ltr" href="tel:09904703935">09904703935</a></p>
+    <nav class="foot__links" aria-label="پیوندهای پایانی">
+      <a href="https://jahanicoaching.ir/#/terms">قوانین و مقررات</a>
+      <a href="https://jahanicoaching.ir/#/privacy">حریم خصوصی</a>
+      <a href="https://jahanicoaching.ir/#/cookies">سیاست کوکی</a>
+      <a href="https://instagram.com/swim_jahani" rel="noopener"><span class="ltr">swim_jahani</span></a>
+    </nav>
+  </footer>
+</body>
+</html>
