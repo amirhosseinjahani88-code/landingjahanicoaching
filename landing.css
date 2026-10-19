@@ -99,10 +99,13 @@ a { color: inherit; }
   width: min(64vw, 260px); aspect-ratio: 9 / 18.5; padding: 10px; border-radius: 36px;
   background: #05080A; color: var(--ink);
 }
-.phone__screen { height: 100%; border-radius: 28px; background: var(--bg); padding: 28px 14px 14px; display: flex; flex-direction: column; gap: 10px; }
-.phone__title { font-weight: 800; font-size: 20px; display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px; }
-.prow { background: var(--surface); border-radius: 14px; padding: 10px 12px; display: grid; gap: 2px; font-size: 13px; font-weight: 700; opacity: calc(0.12 + 0.88 * var(--t, 1)); transform: translateY(calc(8px * (1 - var(--t, 1)))); }
+.phone { container-type: inline-size; }
+/* everything inside the phone scales with its width (cqw), so it never spills out on a short screen */
+.phone__screen { height: 100%; overflow: hidden; border-radius: 28px; background: var(--bg); padding: 11cqw 5.6cqw 5.6cqw; display: flex; flex-direction: column; gap: 3.6cqw; }
+.phone__title { font-weight: 800; font-size: 8cqw; display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px; }
+.prow { background: var(--surface); border-radius: 5.6cqw; padding: 3.6cqw 4.8cqw; display: grid; gap: 0; font-size: 5.2cqw; line-height: 1.5; font-weight: 700; opacity: calc(0.12 + 0.88 * var(--t, 1)); transform: translateY(calc(8px * (1 - var(--t, 1)))); }
 .prow__v { font-weight: 400; color: var(--muted); }
+.phone .tag { font-size: 5cqw; padding: 0.4cqw 4cqw; }
 .tag { font-size: 13px; font-weight: 400; padding: 1px 10px; border-radius: 999px; background: var(--surface-2); color: var(--muted); }
 
 /* ---------- 1. scene: pinned and scrubbed (html.scene-on, set by landing.js) ---------- */
@@ -264,4 +267,14 @@ a { color: inherit; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .js .reveal { opacity: 1; transform: none; }
+}
+
+/* short phones: a smaller, lower phone so it clears the scroll cue */
+@media (max-width: 899px) and (max-height: 740px) {
+  .scene-on .phone { width: min(50vw, 26svh); }
+  .scene-on .scene__phone, .scene-on .obj { top: 64%; }
+}
+@media (max-width: 899px) and (max-height: 600px) {
+  .scene-on .phone { width: min(50vw, 23svh); }
+  .scene-on .scene__phone, .scene-on .obj { top: 67%; }
 }
